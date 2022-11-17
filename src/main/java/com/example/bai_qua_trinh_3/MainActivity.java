@@ -103,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
     private void dialog(int gravity)
     {
         final Dialog dialog = new Dialog(MainActivity.this);
-        //dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog);
         Button btnMore= (Button)dialog.findViewById(R.id.btnmore);
         Button btnClose= (Button)dialog.findViewById(R.id.btnclose);
@@ -113,14 +112,6 @@ public class MainActivity extends AppCompatActivity {
         Title.setText(arrayTitle.get(temp));
         Description.setText(arrayDescription.get(temp));
         Date.setText(arrayDate.get(temp));
-        //Window window = dialog.getWindow();
-        //if(window==null){
-          //  return;
-        //}
-        //window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.WRAP_CONTENT);
-        //window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        //WindowManager.LayoutParams windowAttributes = window.getAttributes();
-        //window.setAttributes(windowAttributes);
         dialog.setCancelable(false);
 
         btnMore.setOnClickListener(new View.OnClickListener() {
