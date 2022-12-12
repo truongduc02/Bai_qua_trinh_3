@@ -16,27 +16,41 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/an" />
+            android:src="@drawable/vne_logo_rss" />
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="9"
-            android:textSize="15dp" />
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:text="hello"
+            android:textColor="@color/black"
+            />
     </LinearLayout>
 
     <TextView
         android:id="@+id/descripton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="12dp"/>
+        android:textSize="12dp"
+        />
 
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="12dp"/>
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            />
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
